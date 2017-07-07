@@ -34,3 +34,18 @@ body{
 #fullName{
   width: 50%;
 }
+
+h3, ul>li{
+  color: #4d4d4d;
+}
+
+#Ruby-Rails{
+  color: #4d4d4d;
+}
+
+.defbox {
+  display: none;
+}
+.term{
+  text-decoration: underline;
+}
