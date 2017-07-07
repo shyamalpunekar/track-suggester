@@ -10,10 +10,10 @@ Webpage gives an information about languages , switching between languages and p
 
 ## Setup/Installation Requirements
 
-* _Open the browser_
-* _Enter _ (Provide the link here)
-* _Enter your details in given form_
-*
+* Open the browser_
+* Enter https://shyamalpunekar.github.io/track-suggester/
+* Enter your details in given form
+* Submit form.
 
 ## Known Bugs
 . Image resize needed. Fix will be available next release
@@ -25,9 +25,9 @@ Further assistance please contact @455-435-9900.
 HTML, CSS, Bootstrap, JavaScript & jQuery.
 
 ## Reference
- https://github.com/shyamalpunekar/track-suggester
+ Repository link - https://github.com/shyamalpunekar/track-suggester
 
- webview link: - https://shyamalpunekar.github.io/track-suggester/
+
 
 ### License
 
