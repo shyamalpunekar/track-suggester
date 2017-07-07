@@ -14,9 +14,23 @@
   text-align: center;
   border: 2px thin grey;
   margin:20px 120px 20px 120px;
+  font-size: 18px;
 
 }
 #coding-bootcamp25-logo{
   float: right;
+}
 
+body{
+  background-color: #e6ffff;
+}
+
+#button{
+  margin: 20px 0px 0px 5px;
+  border-radius: 2px solid black;
+  font-weight: bold;
+}
+
+#fullName{
+  width: 50%;
 }
