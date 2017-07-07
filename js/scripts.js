@@ -31,9 +31,10 @@ $(document).ready(function () {
 
   $("#button").on("click", function (event) {
     var count = 0;
-    var address = $(".address").append("400 SW 6th Ave #800, Portland, OR 97204");
+
     var fullNameInput = $("#fullName").val();
     var answerOne = $("#questionOne").val();
+
     if (answerOne == 'h6') {
       count = count + 1;
     }
@@ -55,17 +56,15 @@ $(document).ready(function () {
       count = count + 1;
     }
     if (count >= 3) {
-      alert('Form Submitted');
+      alert('Form Submitted, Thank You!');
+      $("#suggestedCourse").show();
     } else {
-      alert("Please, enter other details");
+      $("#suggestedCourse").hide();
     }
     $(".fullName").text(fullNameInput);
     $(".questionOne").text(answerOne);
     $(".CSSDesign").text(answerTwo);
 
-
-    $("#suggestedCourse").toggle();
-    $("#meetUs").toggle();
     event.preventDefault();
 
   });

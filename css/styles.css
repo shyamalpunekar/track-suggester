@@ -1,75 +1,85 @@
 #epicodusLogo {
-  width: 15%;
-  height: 15%;
-  float: left;
+width: 15%;
+height: 15%;
+float: left;
 }
 
-#codingBootcamps {
-  width: 50%;
-  height: 50%;
-  float: left;
+#codingBootcampLogo {
+width: 150%;
+height: 150%;
+float: left;
 }
 
 .intro {
-  text-align: center;
-  border: 2px thin grey;
-  margin: 20px 120px 20px 120px;
-  font-size: 18px;
+text-align: center;
+border: 2px thin grey;
+margin: 20px 100px -10px 120px;
+font-size: 18px;
 }
 
-#codingBootcamp25logo {
-  float: right;
+#codingBootcamp25Logo {
+float: left;
+margin: 0px 40px 10px 830px;
+padding-top: 0.9px;
 }
 
 body {
-  background-color: #e6ffff;
+background-color: #e6ffff;
 }
 
 #button {
-  margin: 20px 0px 0px 5px;
-  border-radius: 2px solid black;
-  font-weight: bold;
-  font-size: 22px;
+margin: 20px 0px 0px 5px;
+border-radius: 2px solid black;
+font-weight: bold;
+font-size: 22px;
 }
 
-h3{
-  color: #4d4d4d;
+h3,
+h5 {
+color: #4d4d4d;
+margin-left: 40px;
+}
+
+h5 {
+margin-left: 40px;
 }
 
 #rubyRails {
-  color: #4d4d4d;
+color: #4d4d4d;
 }
 
-.col-xs-8{
-  margin-left: 30px;
+.col-xs-8 {
+margin-left: 30px;
 }
 
 .defbox {
-  display: none;
+display: none;
 }
 
-h1{
-  padding-left: 40px;
+h1 {
+padding-left: 40px;
 }
+
 .term {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
-#meetUs{
-  display: none;
+#meetUs {
+display: none;
 }
+
 #suggestedCourse {
-  display: none;
+display: none;
 }
 
 @media screen and (max-width: 768px) and (min-width: 680px) {
-	body {
-		background-color: black;
-		color: blue;
-	}
+body {
+  background-color: black;
+  color: blue;
+}
 }
 
 @media screen and (max-width:480px) {
-	body {
-		background-color: teal;
-	}
+body {
+  background-color: teal;
+}
