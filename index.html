@@ -1,110 +1,118 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Epicodus | A vocational school for aspiring programmers</title>
-  <link rel="stylesheet" href="css/bootstrap.css" media="all" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" media="all" type="text/css">
-  <script src="js/jquery-3.2.1.js"></script>
-  <script src="js/scripts.js"></script>
-</head>
-<body>
-  <div class="sidebar">
-    <div class="row">
-      <h1></h1>
-      <img id ="epicodus-logo"src="img/epicodus-logo.png" alt="Epicodus">
+  <head>
+    <title>Epicodus | A vocational school for aspiring programmers</title>
+    <link rel="stylesheet" href="css/bootstrap.css" media="all" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" media="all" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="row">
+        <img id ="epicodus-logo"src="img/epicodus-logo.png" alt="Epicodus">
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="jumotron">
-      <h3 class="heading">Currently, Epicodus offers the following tracks in Portland and Seattle:</h3>
-      <div id="Ruby-Rails">
+    <div class="container">
+      <div class="jumotron">
+        <h3 class="heading">Currently, Epicodus offers the following tracks in Portland and Seattle:</h3>
+        <div id="rubyRails">
           <li class="term">Ruby/Rails</li>
           <p class="defbox">Ruby-PHP is particularly well suited for organizing and transporting huge sets of information. For that reason PHP is the server-side language for 82.5% of all websites whose server-side language is known.
           </p>
-      </div>
-      <div id="PHP-Drupal">
+        </div>
+        <div id="phpDrupal">
           <li class="term">PHP/Drupal</li>
           <p class="defbox">In this course we'll focus on the fundamentals of programming web applications using PHP and the web framework Silex. Working with PHP and Silex, we'll use the MVC pattern of web development, where a program's core logic is written in its models (PHP classes). The user interface is coded in views (HTML/CSS/JavaScript). And controllers (Silex) will handle web requests, defining what model code to run and which views (Twig templates) to return back in the HTTP response.</p>
-      </div>
-      <div id="Java-Android">
+        </div>
+        <div id="javaAndroid">
           <li class="term">Java/Android</li>
           <p class="defbox">In this course we focus on the fundamentals of programming web applications using Java and the web framework Spark. Working with Java and Spark, we'll use the MVC pattern of web development, where a program's core logic is written in its models (Java classes). The user interface is coded in views (HTML/CSS/JavaScript). And controllers (Spark) will handle web requests, defining what model code to run and which views to return back in the HTTP response. Also,  we'll learn how to build Android apps, including how to create user interfaces, communicate with a backend server, and take advantage of device features.</p>
-      </div>
-      <div id="CSS-Design">
+        </div>
+        <div id="CSSDesign">
           <li class="term">CSS/Design</li>
           <p class="defbox">Welcome to CSS! You are about to set sail on 5 weeks of Cascading Style Sheets to bring beauty and excitement to the web pages that you create.</p>
-      </div>
-      <div id="C#-.NET">
+        </div>
+        <div id="CsharpNET">
           <li class="term">C#/.NET</li>
           <p class="defbox">Welcome to C#! You are about to begin your journey into the world of web development in the C# programming language.C# is the object-oriented component of the ASP.NET Framework. Microsoft Chief Architect and C# team leader Anders Hejlsberg described it as an iteration and improvement of the C++ language. Hejlsberg touted C# as "the first component-oriented language in the C/C++ family." As a result, it is " a simple, modern, general-purpose, object-oriented programming language" and to be "economical with regard to memory and processing power requirements</p>
+        </div>
       </div>
     </div>
-  </div>
-  <br>
-  <div class="container">
+    <br>
+    <div class="container">
     <div class="well">
       <div class="row">
         <h1>Please Enter the details:</h1>
-    <form class="formOne">
-      <div class="col-xs-6">
-        <label for="FullName">FullName</label>
-        <input id="FullName" class="form-control" type="text">
+        <form class="userInfoForm">
+          <div class="col-xs-6">
+            <label for="fullName">FullName</label>
+            <input id="fullName" class="form-control" type="text">
+          </div>
+          <div class="col-xs-6">
+            <label for="questioOne">What is the correct HTML element for the largest heading?</label>
+            <input id="questionOne" class="form-control" type="text">
+          </div>
+          <div class="col-xs-6">
+            <label for="questionTwo"> What is the correct HTML element for inserting a line break?</label>
+            <input id="questionTwo" class="form-control" type="text">
+          </div>
+          <div class="col-xs-6">
+            <label for="questionThree"> Which HTML attribute is used to define inline styles?</label>
+            <input id="questionThree" class="form-control" type="text">
+          </div>
+          <div class="col-xs-6">
+            <label for="questionFour"> Which HTML attribute is used to define inline styles?</label>
+            <input id="questionFour" class="form-control" type="text">
+          </div>
+          <div class="col-xs-6">
+            <label for="questionFive"> jQuery uses CSS selectors to select elements.. True or False?</label>
+            <input id="questionFive" class="form-control" type="text">
+          </div>
+          <div class="col-xs-6">
+            <label for="interest">language Interest</label>
+            <input id="interest" class="form-control" type="text">
+          </div>
+          <div class="col-xs-6">
+            <label for="options">Select language</label>
+            <select class="form-control" id="options">
+              <option value="1">Ruby/Rails</option>
+              <option value="2">PHP/Drupal</option>
+              <option value="3">Java/Android</option>
+              <option value="4">CSS/Design</option>
+              <option value="5">C#/.NET</option>
+            </select>
+          </div>
+          <div class="col-xs-6">
+            <label for="additional">Additional Information</label>
+            <input id="additional" class="form-control" type="text">
+          </div>
+          <br>
+          <div class="col-xs-6">
+            <button type="button" id="button">Submit</button>
+          </div>
+        </form>
       </div>
-      <div class="col-xs-6">
-        <label for="age">Age</label>
-        <input id="age" class="form-control" type="text">
+      <div id="suggestedCourse">
+        <h3>Based on your results here are few suggestions.</h3>
+        <p>Welcome to Epicodus!!!<span class="fullName"></span>Thank you so much for spending time for answering the questions.Based on the answers, we can suggest you...<span class="CSS-Design"></span> and <span class="javaAndroid"></span>.</p>
       </div>
-      <div class="col-xs-6">
-        <label for="education">Education</label>
-        <input id="education" class="form-control" type="text">
-      </div>
-      <div class="col-xs-6">
-        <label for="interest">language Interest</label>
-        <input id="interest" class="form-control" type="text">
-      </div>
-      <div class="col-xs-6">
-        <label for="options">Select language</label>
-        <select class="form-control" id="options">
-          <option value="1">Ruby/Rails</option>
-          <option value="2">PHP/Drupal</option>
-          <option value="3">Java/Android</option>
-          <option value="4">CSS/Design</option>
-          <option value="5">C#/.NET</option>
-        </select>
-      </div>
-      <div class="col-xs-6">
-        <label for="additional">Additional Information</label>
-        <input id="additional" class="form-control" type="text">
-      </div>
-      <br>
-      <div class="col-xs-6">
-        <button type="button" id="button">Submit</button>
-      </div>
-    </form>
     </div>
-  </div>
-</div>
-  <div class="container">
-    <div class="well">
-      <div class="row">
-        <div class="col-xs-2">
-          <img id ="coding-bootcamp-logo"src="img/coding-bootcamps.jpeg" alt="Epicodus">
+    <div class="container">
+      <div class="well">
+        <div class="row">
+          <div class="col-xs-2">
+            <img id ="codingBootcampLogo"src="img/coding-bootcamps.jpeg" alt="Epicodus">
+          </div>
+          <div class="col-xs-8">
+            <div class="panel-body">
+              <p class="intro">Epicodus is the most affordable full-time, in-person code school, and one of the few programs that includes an internship with a tech company as well as job search support.  Students graduate with real-life work experience already on their resumes, a dedicated team to help land their first job, and a close community of peers and instructors supporting them along the way.</p>
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <img id ="codingBootcamp25Logo"src="img/25-coding-bootcamps.jpeg">
+          </div>
         </div>
-        <div class="col-xs-8">
-          <div class="panel-body">
-          <p class="intro">Epicodus is the most affordable full-time, in-person code school, and one of the few programs that includes an internship with a tech company as well as job search support.  Students graduate with real-life work experience already on their resumes, a dedicated team to help land their first job, and a close community of peers and instructors supporting them along the way.</p>
-        </div>
-        </div>
-        <div class="col-xs-2">
-          <img id ="coding-bootcamp25-logo"src="img/25-coding-bootcamps.jpeg">
-        </div>
+      </div>
     </div>
-
-
-
-
-    </div>
-
-  </div>
-
-</body>
+  </body>

@@ -1,51 +1,68 @@
-#epicodus-logo{
+#epicodusLogo {
   width: 15%;
   height: 15%;
   float: left;
 }
 
-#coding-bootcamps
-{
+#codingBootcamps {
   width: 50%;
   height: 50%;
   float: left;
 }
-.intro{
+
+.intro {
   text-align: center;
   border: 2px thin grey;
-  margin:20px 120px 20px 120px;
+  margin: 20px 120px 20px 120px;
   font-size: 18px;
-
 }
-#coding-bootcamp25-logo{
+
+#codingBootcamp25logo {
   float: right;
 }
 
-body{
+body {
   background-color: #e6ffff;
 }
 
-#button{
+#button {
   margin: 20px 0px 0px 5px;
   border-radius: 2px solid black;
   font-weight: bold;
 }
 
-#fullName{
-  width: 50%;
+#fullName {
+  /*width: 60%;*/
 }
 
-h3, ul>li{
+h3{
   color: #4d4d4d;
 }
 
-#Ruby-Rails{
+#rubyRails {
   color: #4d4d4d;
 }
 
 .defbox {
   display: none;
 }
-.term{
+
+.term {
   text-decoration: underline;
 }
+
+#suggestedCourse {
+  display: none;
+}
+
+@media screen and (max-width: 768px) and (min-width: 680px) {
+	body {
+		background-color: black;
+		color: blue;
+	}
+}
+
+@media screen and (max-width:480px) {
+	body {
+		background-color: teal;
+	}

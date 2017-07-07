@@ -1,31 +1,68 @@
-$(document).ready(function() {
-  $("#Ruby-Rails").click(function(event) {
+$(document).ready(function () {
+  $("#rubyRails").click(function (event) {
     event.preventDefault();
-    $("#Ruby-Rails .term").toggle();
-    $("#Ruby-Rails .defbox").toggle();
+    $("#rubyRails .term").toggle();
+    $("#rubyRails .defbox").toggle();
   });
 
-  $("#PHP-Drupal").click(function(event) {
+  $("#phpDrupal").click(function (event) {
     event.preventDefault();
-    $("#PHP-Drupal .term").toggle();
-    $("#PHP-Drupal .defbox").toggle();
+    $("#pDrupal .term").toggle();
+    $("#phpDrupal .defbox").toggle();
   });
 
-  $("#Java-Android").click(function(event) {
+  $("#javaAndroid").click(function (event) {
     event.preventDefault();
-    $("#Java-Android .term").toggle();
-    $("#Java-Android .defbox").toggle();
+    $("#javaAndroid .term").toggle();
+    $("#javaAndroid .defbox").toggle();
   });
 
-  $("#CSS-Design").click(function(event) {
+  $("#CSSDesign").click(function (event) {
     event.preventDefault();
-    $("#CSS-Design .term").toggle();
-    $("#CSS-Design .defbox").toggle();
+    $("#CSSDesign .term").toggle();
+    $("#CSSDesign .defbox").toggle();
   });
 
-  $("#C#-.NET").click(function(event) {
+  $("#CsharpNET").click(function (event) {
     event.preventDefault();
-    $("#C#-.NET .term").toggle();
-    $("#C#-.NET .defbox").toggle();
+    $("#CsharpNET .term").toggle();
+    $("#CsharpNET .defbox").toggle();
   });
+
+  $("#button").on("click", function (event) {
+    var count = 0;
+    var fullNameInput = $("#fullName").val();
+    var answerOne = $("#questionOne").val();
+    if (answerOne == 'h6') {
+      count = count + 1;
+    }
+    var answerTwo = $("#questionTwo").val();
+    if (answerTwo == 'h6') {
+      count = count + 1;
+    }
+
+    var answerThree = $("#questionThree").val();
+    if (answerThree == 'h6') {
+      count = count + 1;
+    }
+    var answerFour = $("#questionFour").val();
+    if (answerFour == 'h6') {
+      count = count + 1;
+    }
+    var answerFive = $("#questionFive").val();
+    if (answerFive == 'h6') {
+      count = count + 1;
+    }
+    if (count >= 3) {
+      alert('hi');
+    }
+    $(".fullName").text(fullNameInput);
+    $(".questionOne").text(answerOne);
+    $(".CSSDesign").text(answerTwo);
+
+
+    $("#suggestedCourse").show();
+    event.preventDefault();
+  });
+
 });
