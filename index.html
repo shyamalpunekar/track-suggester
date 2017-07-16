@@ -46,29 +46,47 @@
         <h3 class="heading">Please Enter the details:</h3>
         <h5>Based on your answers we will suggest you courses which might be the best fir for you.</h5>
         <form class="userInfoForm">
+          <div class="form-group">
           <div class="col-xs-8">
             <label for="fullName">FullName</label>
             <input id="fullName" class="form-control" type="text">
           </div>
+          </div><br>
           <div class="col-xs-8">
-            <label for="questioOne">What is the correct HTML element for the largest heading?</label>
-            <input id="questionOne" class="form-control" type="text">
+            <div class="form-group">
+              <div id="environment">
+                <label for="environment">What is the correct HTML element for the largest <em>heading</em>?
+                </label>
+                <div class="radio">
+                  <label><input name="heading" type="radio" value="heading-6">
+                    h6</label>
+               </div>
+               <div class="radio">
+                 <label><input name="heading" type="radio" value="heading-1">
+                 h1</label>
+               </div>
+               <div class="radio">
+                 <label><input name="heading" type="radio" value=
+                 "heading-3">h3</label>
+               </div>
+             </div>
+             </div><br>
           </div>
           <div class="col-xs-8">
             <label for="questionTwo"> What is the correct HTML element for inserting a line break?</label>
-            <input id="questionTwo" class="form-control" type="text">
+            <input id="questionTwo" class="form-control" type="radio">
           </div>
           <div class="col-xs-8">
             <label for="questionThree">Is jQuery a library for client scripting or server scripting?</label>
-            <input id="questionThree" class="form-control" type="text">
+            <input id="questionThree" class="form-control" type="radio">
           </div>
           <div class="col-xs-8">
             <label for="questionFour"> Which HTML attribute is used to define inline styles?</label>
-            <input id="questionFour" class="form-control" type="text">
+            <input id="questionFour" class="form-control" type="radio">
           </div>
           <div class="col-xs-8">
             <label for="questionFive"> jQuery uses CSS selectors to select elements.. True or False?</label>
-            <input id="questionFive" class="form-control" type="text">
+            <input id="questionFive" class="form-control" type="radio">
           </div>
           <div class="col-xs-8">
             <label for="interest">language Interest</label>
