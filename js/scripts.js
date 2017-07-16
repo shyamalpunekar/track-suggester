@@ -33,28 +33,17 @@ $(document).ready(function () {
     var count = 0;
 
     var fullNameInput = $("#fullName").val();
-    var answerOne = $("#questionOne").val();
+    var headingInput = $("input:radio[name=heading]:checked").val();
+    var breakElementInput = $("input:radio[name=breakElement]:checked").val();
+    var languageInput = $("input:radio[name=language]:checked").val();
+    var attributeInput = $("input:radio[name=attribute]:checked").val();
+    var selectElementInput = $("input:radio[name=selectElement]:checked").val();
 
-    if (answerOne == 'h6') {
-      count = count + 1;
-    }
-    var answerTwo = $("#questionTwo").val();
-    if (answerTwo == '<br/>') {
-      count = count + 1;
-    }
 
-    var answerThree = $("#questionThree").val();
-    if (answerThree == 'client scripting') {
-      count = count + 1;
-    }
-    var answerFour = $("#questionFour").val();
-    if (answerFour == 'style') {
-      count = count + 1;
-    }
-    var answerFive = $("#questionFive").val();
-    if (answerFive == 'true') {
-      count = count + 1;
-    }
+
+
+
+
     if (count >= 3) {
       alert('Form Submitted, Thank You!');
       $("#suggestedCourse").show();
