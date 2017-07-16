@@ -46,8 +46,8 @@
         <h3 class="heading">Please Enter the details:</h3>
         <h5>Based on your answers we will suggest you courses which might be the best fir for you.</h5>
         <form class="userInfoForm">
-          <div class="form-group">
           <div class="col-xs-8">
+          <div class="form-group">
             <label for="fullName">FullName</label>
             <input id="fullName" class="form-control" type="text">
           </div>
@@ -73,8 +73,24 @@
              </div><br>
           </div>
           <div class="col-xs-8">
-            <label for="questionTwo"> What is the correct HTML element for inserting a line break?</label>
-            <input id="questionTwo" class="form-control" type="radio">
+            <div class="form-group">
+              <div id="environment">
+                <label for="environment">What is the correct HTML element for inserting a <em>line break</em>?
+                </label>
+                <div class="radio">
+                  <label><input name="break-element" type="radio" value="element-1">
+                    "lb"</label>
+               </div>
+               <div class="radio">
+                 <label><input name="break-element" type="radio" value="element-2">
+                 "br"</label>
+               </div>
+               <div class="radio">
+                 <label><input name="break-element" type="radio" value=
+                 "element-3">"break"</label>
+               </div>
+             </div><br>
+             </div>
           </div>
           <div class="col-xs-8">
             <label for="questionThree">Is jQuery a library for client scripting or server scripting?</label>
