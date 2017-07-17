@@ -30,29 +30,47 @@ $(document).ready(function () {
   });
 
   $("#button").on("click", function (event) {
-    var count = 0;
 
     var fullNameInput = $("#fullName").val();
+
     var headingInput = $("input:radio[name=heading]:checked").val();
+    
     var breakElementInput = $("input:radio[name=breakElement]:checked").val();
     var languageInput = $("input:radio[name=language]:checked").val();
     var attributeInput = $("input:radio[name=attribute]:checked").val();
     var selectElementInput = $("input:radio[name=selectElement]:checked").val();
 
+  // --- Business Logic ---
+    var count = 0;
 
+    if (headingInput == 'h1') {
+      count = count + 1;
+    }
 
+    if (breakElementInput == 'br') {
+      count = count + 1;
+    }
 
+    if (languageInput == 'client scripting') {
+      count = count + 1;
+    }
 
+    if (attributeInput == 'style') {
+      count = count + 1;
+    }
 
+    if (selectElement == 'true') {
+      count = count + 1;
+    }
     if (count >= 3) {
       alert('Form Submitted, Thank You!');
-      $("#suggestedCourse").show();
-    } else {
-      $("#suggestedCourse").hide();
+      $("#suggestedCourse").toggle();
+    } else if (count < 3){
+      $("#meetUs").toggle();
     }
     $(".fullName").text(fullNameInput);
-    $(".questionOne").text(answerOne);
-    $(".CSSDesign").text(answerTwo);
+    $(".questionOne").text(headingInput);
+    $(".CSSDesign").text(breakElementInput);
 
     event.preventDefault();
 
