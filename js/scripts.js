@@ -7,7 +7,7 @@ $(document).ready(function () {
 
   $("#phpDrupal").click(function (event) {
     event.preventDefault();
-    $("#pDrupal .term").toggle();
+    $("#phpDrupal .term").toggle();
     $("#phpDrupal .defbox").toggle();
   });
 
