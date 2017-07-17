@@ -34,13 +34,13 @@ $(document).ready(function () {
     var fullNameInput = $("#fullName").val();
 
     var headingInput = $("input:radio[name=heading]:checked").val();
-    
+
     var breakElementInput = $("input:radio[name=breakElement]:checked").val();
     var languageInput = $("input:radio[name=language]:checked").val();
     var attributeInput = $("input:radio[name=attribute]:checked").val();
     var selectElementInput = $("input:radio[name=selectElement]:checked").val();
 
-  // --- Business Logic ---
+    // --- Business Logic ---
     var count = 0;
 
     if (headingInput == 'h1') {
@@ -65,7 +65,7 @@ $(document).ready(function () {
     if (count >= 3) {
       alert('Form Submitted, Thank You!');
       $("#suggestedCourse").toggle();
-    } else if (count < 3){
+    } else if (count < 3) {
       $("#meetUs").toggle();
     }
     $(".fullName").text(fullNameInput);
