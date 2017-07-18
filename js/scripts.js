@@ -64,9 +64,11 @@ $(document).ready(function () {
     }
     if (count >= 3) {
       alert('Form Submitted, Thank You!');
-      $("#suggestedCourse").toggle();
-    } else if (count < 3) {
-      $("#meetUs").toggle();
+      $("#suggestedCourse").show();
+    } else if (count >= 2) {
+      $("#meetUs").show();
+    } else {
+      $("#try").show();
     }
     $(".fullName").text(fullNameInput);
     $(".questionOne").text(headingInput);
